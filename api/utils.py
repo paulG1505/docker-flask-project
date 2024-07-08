@@ -18,8 +18,8 @@ def allowed_file(filename):
     bool
         True if the file is an image, False otherwise.
     """
-    # TODO
-    raise NotImplementedError
+    extensions = (".png", ".jpg", ".jpeg", ".gif")
+    return filename.lower().endswith(extensions)
 
 
 def get_file_hash(file):
